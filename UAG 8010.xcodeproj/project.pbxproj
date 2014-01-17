@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D12EFF3F1888D0E100F11D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EFF3E1888D0E000F11D8E /* Foundation.framework */; };
+		D12EFF411888D0E100F11D8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EFF401888D0E100F11D8E /* CoreGraphics.framework */; };
+		D12EFF431888D0E100F11D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EFF421888D0E100F11D8E /* UIKit.framework */; };
+		D12EFF491888D0E100F11D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D12EFF471888D0E100F11D8E /* InfoPlist.strings */; };
+		D12EFF4B1888D0E100F11D8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D12EFF4A1888D0E100F11D8E /* main.m */; };
+		D12EFF4F1888D0E100F11D8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D12EFF4E1888D0E100F11D8E /* AppDelegate.m */; };
+		D12EFF521888D0E100F11D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12EFF501888D0E100F11D8E /* Main.storyboard */; };
+		D12EFF551888D0E100F11D8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12EFF541888D0E100F11D8E /* ViewController.m */; };
+		D12EFF571888D0E100F11D8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12EFF561888D0E100F11D8E /* Images.xcassets */; };
+		D12EFF5E1888D0E100F11D8E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EFF5D1888D0E100F11D8E /* XCTest.framework */; };
+		D12EFF5F1888D0E100F11D8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EFF3E1888D0E000F11D8E /* Foundation.framework */; };
+		D12EFF601888D0E100F11D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EFF421888D0E100F11D8E /* UIKit.framework */; };
+		D12EFF681888D0E100F11D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D12EFF661888D0E100F11D8E /* InfoPlist.strings */; };
+		D12EFF6A1888D0E100F11D8E /* UAG_8010Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12EFF691888D0E100F11D8E /* UAG_8010Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D12EFF611888D0E100F11D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D12EFF331888D0E000F11D8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D12EFF3A1888D0E000F11D8E;
+			remoteInfo = "UAG 8010";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D12EFF3B1888D0E000F11D8E /* UAG 8010.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UAG 8010.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12EFF3E1888D0E000F11D8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D12EFF401888D0E100F11D8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D12EFF421888D0E100F11D8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D12EFF461888D0E100F11D8E /* UAG 8010-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UAG 8010-Info.plist"; sourceTree = "<group>"; };
+		D12EFF481888D0E100F11D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D12EFF4A1888D0E100F11D8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D12EFF4C1888D0E100F11D8E /* UAG 8010-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UAG 8010-Prefix.pch"; sourceTree = "<group>"; };
+		D12EFF4D1888D0E100F11D8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D12EFF4E1888D0E100F11D8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D12EFF511888D0E100F11D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D12EFF531888D0E100F11D8E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D12EFF541888D0E100F11D8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D12EFF561888D0E100F11D8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D12EFF5C1888D0E100F11D8E /* UAG 8010Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UAG 8010Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12EFF5D1888D0E100F11D8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D12EFF651888D0E100F11D8E /* UAG 8010Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UAG 8010Tests-Info.plist"; sourceTree = "<group>"; };
+		D12EFF671888D0E100F11D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D12EFF691888D0E100F11D8E /* UAG_8010Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAG_8010Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D12EFF381888D0E000F11D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12EFF411888D0E100F11D8E /* CoreGraphics.framework in Frameworks */,
+				D12EFF431888D0E100F11D8E /* UIKit.framework in Frameworks */,
+				D12EFF3F1888D0E100F11D8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12EFF591888D0E100F11D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12EFF5E1888D0E100F11D8E /* XCTest.framework in Frameworks */,
+				D12EFF601888D0E100F11D8E /* UIKit.framework in Frameworks */,
+				D12EFF5F1888D0E100F11D8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D12EFF321888D0E000F11D8E = {
+			isa = PBXGroup;
+			children = (
+				D12EFF441888D0E100F11D8E /* UAG 8010 */,
+				D12EFF631888D0E100F11D8E /* UAG 8010Tests */,
+				D12EFF3D1888D0E000F11D8E /* Frameworks */,
+				D12EFF3C1888D0E000F11D8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D12EFF3C1888D0E000F11D8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D12EFF3B1888D0E000F11D8E /* UAG 8010.app */,
+				D12EFF5C1888D0E100F11D8E /* UAG 8010Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D12EFF3D1888D0E000F11D8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D12EFF3E1888D0E000F11D8E /* Foundation.framework */,
+				D12EFF401888D0E100F11D8E /* CoreGraphics.framework */,
+				D12EFF421888D0E100F11D8E /* UIKit.framework */,
+				D12EFF5D1888D0E100F11D8E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D12EFF441888D0E100F11D8E /* UAG 8010 */ = {
+			isa = PBXGroup;
+			children = (
+				D12EFF4D1888D0E100F11D8E /* AppDelegate.h */,
+				D12EFF4E1888D0E100F11D8E /* AppDelegate.m */,
+				D12EFF501888D0E100F11D8E /* Main.storyboard */,
+				D12EFF531888D0E100F11D8E /* ViewController.h */,
+				D12EFF541888D0E100F11D8E /* ViewController.m */,
+				D12EFF561888D0E100F11D8E /* Images.xcassets */,
+				D12EFF451888D0E100F11D8E /* Supporting Files */,
+			);
+			path = "UAG 8010";
+			sourceTree = "<group>";
+		};
+		D12EFF451888D0E100F11D8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D12EFF461888D0E100F11D8E /* UAG 8010-Info.plist */,
+				D12EFF471888D0E100F11D8E /* InfoPlist.strings */,
+				D12EFF4A1888D0E100F11D8E /* main.m */,
+				D12EFF4C1888D0E100F11D8E /* UAG 8010-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D12EFF631888D0E100F11D8E /* UAG 8010Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D12EFF691888D0E100F11D8E /* UAG_8010Tests.m */,
+				D12EFF641888D0E100F11D8E /* Supporting Files */,
+			);
+			path = "UAG 8010Tests";
+			sourceTree = "<group>";
+		};
+		D12EFF641888D0E100F11D8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D12EFF651888D0E100F11D8E /* UAG 8010Tests-Info.plist */,
+				D12EFF661888D0E100F11D8E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D12EFF3A1888D0E000F11D8E /* UAG 8010 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12EFF6D1888D0E100F11D8E /* Build configuration list for PBXNativeTarget "UAG 8010" */;
+			buildPhases = (
+				D12EFF371888D0E000F11D8E /* Sources */,
+				D12EFF381888D0E000F11D8E /* Frameworks */,
+				D12EFF391888D0E000F11D8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UAG 8010";
+			productName = "UAG 8010";
+			productReference = D12EFF3B1888D0E000F11D8E /* UAG 8010.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D12EFF5B1888D0E100F11D8E /* UAG 8010Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12EFF701888D0E100F11D8E /* Build configuration list for PBXNativeTarget "UAG 8010Tests" */;
+			buildPhases = (
+				D12EFF581888D0E100F11D8E /* Sources */,
+				D12EFF591888D0E100F11D8E /* Frameworks */,
+				D12EFF5A1888D0E100F11D8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D12EFF621888D0E100F11D8E /* PBXTargetDependency */,
+			);
+			name = "UAG 8010Tests";
+			productName = "UAG 8010Tests";
+			productReference = D12EFF5C1888D0E100F11D8E /* UAG 8010Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D12EFF331888D0E000F11D8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = SmartPlace;
+				TargetAttributes = {
+					D12EFF5B1888D0E100F11D8E = {
+						TestTargetID = D12EFF3A1888D0E000F11D8E;
+					};
+				};
+			};
+			buildConfigurationList = D12EFF361888D0E000F11D8E /* Build configuration list for PBXProject "UAG 8010" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D12EFF321888D0E000F11D8E;
+			productRefGroup = D12EFF3C1888D0E000F11D8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D12EFF3A1888D0E000F11D8E /* UAG 8010 */,
+				D12EFF5B1888D0E100F11D8E /* UAG 8010Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D12EFF391888D0E000F11D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12EFF571888D0E100F11D8E /* Images.xcassets in Resources */,
+				D12EFF491888D0E100F11D8E /* InfoPlist.strings in Resources */,
+				D12EFF521888D0E100F11D8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12EFF5A1888D0E100F11D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12EFF681888D0E100F11D8E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D12EFF371888D0E000F11D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12EFF551888D0E100F11D8E /* ViewController.m in Sources */,
+				D12EFF4F1888D0E100F11D8E /* AppDelegate.m in Sources */,
+				D12EFF4B1888D0E100F11D8E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12EFF581888D0E100F11D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12EFF6A1888D0E100F11D8E /* UAG_8010Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D12EFF621888D0E100F11D8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D12EFF3A1888D0E000F11D8E /* UAG 8010 */;
+			targetProxy = D12EFF611888D0E100F11D8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D12EFF471888D0E100F11D8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D12EFF481888D0E100F11D8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D12EFF501888D0E100F11D8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D12EFF511888D0E100F11D8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D12EFF661888D0E100F11D8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D12EFF671888D0E100F11D8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D12EFF6B1888D0E100F11D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D12EFF6C1888D0E100F11D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D12EFF6E1888D0E100F11D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UAG 8010/UAG 8010-Prefix.pch";
+				INFOPLIST_FILE = "UAG 8010/UAG 8010-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D12EFF6F1888D0E100F11D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UAG 8010/UAG 8010-Prefix.pch";
+				INFOPLIST_FILE = "UAG 8010/UAG 8010-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D12EFF711888D0E100F11D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UAG 8010.app/UAG 8010";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UAG 8010/UAG 8010-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UAG 8010Tests/UAG 8010Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D12EFF721888D0E100F11D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UAG 8010.app/UAG 8010";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UAG 8010/UAG 8010-Prefix.pch";
+				INFOPLIST_FILE = "UAG 8010Tests/UAG 8010Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D12EFF361888D0E000F11D8E /* Build configuration list for PBXProject "UAG 8010" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12EFF6B1888D0E100F11D8E /* Debug */,
+				D12EFF6C1888D0E100F11D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D12EFF6D1888D0E100F11D8E /* Build configuration list for PBXNativeTarget "UAG 8010" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12EFF6E1888D0E100F11D8E /* Debug */,
+				D12EFF6F1888D0E100F11D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D12EFF701888D0E100F11D8E /* Build configuration list for PBXNativeTarget "UAG 8010Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12EFF711888D0E100F11D8E /* Debug */,
+				D12EFF721888D0E100F11D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D12EFF331888D0E000F11D8E /* Project object */;
+}
