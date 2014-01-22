@@ -42,6 +42,7 @@
                     </view>
                     <connections>
                         <outlet property="button1" destination="rQN-e1-hdN" id="aNe-dO-V7H"/>
+                        <outlet property="imgMain" destination="YlF-q7-MUY" id="4WW-E0-vNo"/>
                         <outlet property="labelWelcome" destination="dar-jr-YeQ" id="zVi-bm-ddt"/>
                     </connections>
                 </viewController>

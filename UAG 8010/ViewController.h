@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *labelWelcome;
 @property (strong, nonatomic) IBOutlet UIButton *button1;
+@property (strong, nonatomic) IBOutlet UIImageView *imgMain;
 
 - (IBAction)button1Pressed:(id)sender;
 

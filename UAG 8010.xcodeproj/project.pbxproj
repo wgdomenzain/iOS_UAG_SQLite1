@@ -22,6 +22,7 @@
 		D12EFF681888D0E100F11D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D12EFF661888D0E100F11D8E /* InfoPlist.strings */; };
 		D12EFF6A1888D0E100F11D8E /* UAG_8010Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12EFF691888D0E100F11D8E /* UAG_8010Tests.m */; };
 		D12EFF761888D38700F11D8E /* streetfighter2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D12EFF751888D38700F11D8E /* streetfighter2.jpg */; };
+		D1C67F7F188F686500886A2B /* Spiderman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1C67F7E188F686500886A2B /* Spiderman.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D12EFF671888D0E100F11D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D12EFF691888D0E100F11D8E /* UAG_8010Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAG_8010Tests.m; sourceTree = "<group>"; };
 		D12EFF751888D38700F11D8E /* streetfighter2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = streetfighter2.jpg; sourceTree = "<group>"; };
+		D1C67F7E188F686500886A2B /* Spiderman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spiderman.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		D12EFF741888D38700F11D8E /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				D1C67F7E188F686500886A2B /* Spiderman.jpg */,
 				D12EFF751888D38700F11D8E /* streetfighter2.jpg */,
 			);
 			path = imgs;
@@ -241,6 +244,7 @@
 			files = (
 				D12EFF571888D0E100F11D8E /* Images.xcassets in Resources */,
 				D12EFF491888D0E100F11D8E /* InfoPlist.strings in Resources */,
+				D1C67F7F188F686500886A2B /* Spiderman.jpg in Resources */,
 				D12EFF521888D0E100F11D8E /* Main.storyboard in Resources */,
 				D12EFF761888D38700F11D8E /* streetfighter2.jpg in Resources */,
 			);
@@ -388,8 +392,6 @@
 		D12EFF6E1888D0E100F11D8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UAG 8010/UAG 8010-Prefix.pch";
 				INFOPLIST_FILE = "UAG 8010/UAG 8010-Info.plist";
@@ -401,8 +403,6 @@
 		D12EFF6F1888D0E100F11D8E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UAG 8010/UAG 8010-Prefix.pch";
 				INFOPLIST_FILE = "UAG 8010/UAG 8010-Info.plist";
@@ -472,6 +472,7 @@
 				D12EFF6F1888D0E100F11D8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D12EFF701888D0E100F11D8E /* Build configuration list for PBXNativeTarget "UAG 8010Tests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +481,7 @@
 				D12EFF721888D0E100F11D8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

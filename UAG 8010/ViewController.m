@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+BOOL    bo_Image = 0;
 @interface ViewController ()
 
 @end
@@ -28,6 +29,23 @@
 
 - (IBAction)button1Pressed:(id)sender
 {
-    self.labelWelcome.text = @"Walter es la onda";
+    if (bo_Image)
+    {
+        self.labelWelcome.text = @"Spiderman";
+        bo_Image = 0;
+        NSLog(@"Entre a Spiderman");
+        
+        UIImage *image = [UIImage imageNamed:@"Spiderman.jpg"];
+        [self.imgMain setImage:image];
+
+    }
+    else
+    {
+        self.labelWelcome.text = @"StreetFighter";
+        bo_Image = 1;
+        NSLog(@"Entre a Street Fighter");
+        self.imgMain.image = [UIImage imageNamed:@"streetfighter2.jpg"];
+        
+    }
 }
 @end
