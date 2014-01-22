@@ -21,6 +21,7 @@
 		D12EFF601888D0E100F11D8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D12EFF421888D0E100F11D8E /* UIKit.framework */; };
 		D12EFF681888D0E100F11D8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D12EFF661888D0E100F11D8E /* InfoPlist.strings */; };
 		D12EFF6A1888D0E100F11D8E /* UAG_8010Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12EFF691888D0E100F11D8E /* UAG_8010Tests.m */; };
+		D12EFF761888D38700F11D8E /* streetfighter2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D12EFF751888D38700F11D8E /* streetfighter2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D12EFF651888D0E100F11D8E /* UAG 8010Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UAG 8010Tests-Info.plist"; sourceTree = "<group>"; };
 		D12EFF671888D0E100F11D8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D12EFF691888D0E100F11D8E /* UAG_8010Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAG_8010Tests.m; sourceTree = "<group>"; };
+		D12EFF751888D38700F11D8E /* streetfighter2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = streetfighter2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		D12EFF441888D0E100F11D8E /* UAG 8010 */ = {
 			isa = PBXGroup;
 			children = (
+				D12EFF741888D38700F11D8E /* imgs */,
 				D12EFF4D1888D0E100F11D8E /* AppDelegate.h */,
 				D12EFF4E1888D0E100F11D8E /* AppDelegate.m */,
 				D12EFF501888D0E100F11D8E /* Main.storyboard */,
@@ -150,6 +153,14 @@
 				D12EFF661888D0E100F11D8E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D12EFF741888D38700F11D8E /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				D12EFF751888D38700F11D8E /* streetfighter2.jpg */,
+			);
+			path = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 				D12EFF571888D0E100F11D8E /* Images.xcassets in Resources */,
 				D12EFF491888D0E100F11D8E /* InfoPlist.strings in Resources */,
 				D12EFF521888D0E100F11D8E /* Main.storyboard in Resources */,
+				D12EFF761888D38700F11D8E /* streetfighter2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

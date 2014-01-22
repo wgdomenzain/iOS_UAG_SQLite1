@@ -26,4 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)button1Pressed:(id)sender
+{
+    self.labelWelcome.text = @"Walter es la onda";
+}
 @end
