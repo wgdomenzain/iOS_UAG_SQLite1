@@ -84,6 +84,13 @@
                                     <action selector="buttonContinuePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZrV-at-6k8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DX-pw-jkS">
+                                <rect key="frame" x="111" y="175" width="99" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
@@ -91,6 +98,7 @@
                         <outlet property="button1" destination="rQN-e1-hdN" id="aNe-dO-V7H"/>
                         <outlet property="buttonContinue" destination="thc-4s-pfc" id="HZW-Ev-ruj"/>
                         <outlet property="imgMain" destination="YlF-q7-MUY" id="4WW-E0-vNo"/>
+                        <outlet property="labelSeconds" destination="9DX-pw-jkS" id="Al6-uM-cdL"/>
                         <outlet property="textName" destination="BLY-Iq-Hik" id="EoY-h9-z9m"/>
                         <outlet property="textPhone" destination="fSL-cV-VWL" id="mOh-fw-Wut"/>
                     </connections>

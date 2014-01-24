@@ -12,6 +12,9 @@ BOOL    bo_Image = 0;
 BOOL    bo_EmptyTextName = 1;
 BOOL    bo_EmptyTextPhone = 1;
 
+NSTimer     *myTimer;
+int         int_Seconds = 0;
+
 @interface ViewController ()
 
 @end
@@ -22,6 +25,12 @@ BOOL    bo_EmptyTextPhone = 1;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    myTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                               target:self
+                                             selector:@selector(timer_1sec:)
+                                             userInfo:nil
+                                              repeats:YES];
 }
 
 /**********************************************************************************************
@@ -113,4 +122,18 @@ BOOL    bo_EmptyTextPhone = 1;
 {
     
 }
+- (void) timer_1sec:(NSTimer*) timer
+{
+    NSLog(@"1 sec");
+    int_Seconds++;
+    
+    if (int_Seconds >= 10)
+    {
+        int_Seconds = 0;
+    }
+    
+    self.labelSeconds.text = [NSString stringWithFormat:@"%d", int_Seconds];
+    
+}
+
 @end

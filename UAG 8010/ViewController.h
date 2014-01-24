@@ -16,6 +16,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *textName;
 @property (strong, nonatomic) IBOutlet UITextField *textPhone;
 @property (strong, nonatomic) IBOutlet UIButton *buttonContinue;
+@property (strong, nonatomic) IBOutlet UILabel *labelSeconds;
 
 - (IBAction)button1Pressed:(id)sender;
 - (IBAction)buttin:(id)sender;
