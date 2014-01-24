@@ -21,6 +21,56 @@ BOOL    bo_Image = 0;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+/**********************************************************************************************
+ Text Fields
+ **********************************************************************************************/
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSLog(@"Flah when user entered a data in textfields");
+    
+    if (textField == self.textName)
+    {
+        NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+        
+        NSLog(@"Name");
+        
+        if ([newString length] > 0)
+        {
+            
+            if ([newString length] > 20)
+            {
+                return NO;
+            }
+        }
+        else
+        {
+            return YES;
+        }
+    }
+    
+    else if (textField == self.textPhone)
+    {
+        NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+        
+        NSLog(@"Name");
+        
+        if ([newString length] > 0)
+        {
+            
+            if ([newString length] > 10)
+            {
+                return NO;
+            }
+        }
+        else
+        {
+            return YES;
+        }
+    }
+    
+    return YES;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -29,23 +79,10 @@ BOOL    bo_Image = 0;
 
 - (IBAction)button1Pressed:(id)sender
 {
-    if (bo_Image)
-    {
-        self.labelWelcome.text = @"Spiderman";
-        bo_Image = 0;
-        NSLog(@"Entre a Spiderman");
-        
-        UIImage *image = [UIImage imageNamed:@"Spiderman.jpg"];
-        [self.imgMain setImage:image];
+    self.imgMain.alpha+=0.2f;
+}
+- (IBAction)buttin:(id)sender {
+    self.imgMain.alpha-=0.2f;
 
-    }
-    else
-    {
-        self.labelWelcome.text = @"StreetFighter";
-        bo_Image = 1;
-        NSLog(@"Entre a Street Fighter");
-        self.imgMain.image = [UIImage imageNamed:@"streetfighter2.jpg"];
-        
-    }
 }
 @end

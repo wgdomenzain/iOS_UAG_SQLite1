@@ -13,6 +13,11 @@
 @property (strong, nonatomic) IBOutlet UIButton *button1;
 @property (strong, nonatomic) IBOutlet UIImageView *imgMain;
 
+@property (strong, nonatomic) IBOutlet UITextField *textName;
+@property (strong, nonatomic) IBOutlet UITextField *textPhone;
+
+
 - (IBAction)button1Pressed:(id)sender;
+- (IBAction)buttin:(id)sender;
 
 @end
