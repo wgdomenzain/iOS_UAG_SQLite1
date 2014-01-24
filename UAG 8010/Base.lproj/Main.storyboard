@@ -74,18 +74,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thc-4s-pfc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thc-4s-pfc">
                                 <rect key="frame" x="31" y="144" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonContinuePressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZrV-at-6k8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="button1" destination="rQN-e1-hdN" id="aNe-dO-V7H"/>
+                        <outlet property="buttonContinue" destination="thc-4s-pfc" id="HZW-Ev-ruj"/>
                         <outlet property="imgMain" destination="YlF-q7-MUY" id="4WW-E0-vNo"/>
                         <outlet property="textName" destination="BLY-Iq-Hik" id="EoY-h9-z9m"/>
                         <outlet property="textPhone" destination="fSL-cV-VWL" id="mOh-fw-Wut"/>

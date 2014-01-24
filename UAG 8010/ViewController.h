@@ -15,9 +15,10 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *textName;
 @property (strong, nonatomic) IBOutlet UITextField *textPhone;
-
+@property (strong, nonatomic) IBOutlet UIButton *buttonContinue;
 
 - (IBAction)button1Pressed:(id)sender;
 - (IBAction)buttin:(id)sender;
+- (IBAction)buttonContinuePressed:(id)sender;
 
 @end

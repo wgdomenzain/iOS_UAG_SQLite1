@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 BOOL    bo_Image = 0;
+BOOL    bo_EmptyTextName = 1;
+BOOL    bo_EmptyTextPhone = 1;
+
 @interface ViewController ()
 
 @end
@@ -36,7 +39,13 @@ BOOL    bo_Image = 0;
         
         if ([newString length] > 0)
         {
+            //Indicates that textName is not empty
+            bo_EmptyTextName = 0;
             
+            if ((!bo_EmptyTextName && !bo_EmptyTextPhone))
+            {
+                self.buttonContinue.enabled = TRUE;
+            }
             if ([newString length] > 20)
             {
                 return NO;
@@ -44,6 +53,9 @@ BOOL    bo_Image = 0;
         }
         else
         {
+            //Text name is empty
+            bo_EmptyTextName = 1;
+            self.buttonContinue.enabled = FALSE;
             return YES;
         }
     }
@@ -56,7 +68,12 @@ BOOL    bo_Image = 0;
         
         if ([newString length] > 0)
         {
+            bo_EmptyTextPhone = 0;
             
+            if ((!bo_EmptyTextName && !bo_EmptyTextPhone))
+            {
+                self.buttonContinue.enabled = TRUE;
+            }
             if ([newString length] > 10)
             {
                 return NO;
@@ -64,6 +81,8 @@ BOOL    bo_Image = 0;
         }
         else
         {
+            self.buttonContinue.enabled = FALSE;
+            bo_EmptyTextPhone = 1;
             return YES;
         }
     }
@@ -84,5 +103,14 @@ BOOL    bo_Image = 0;
 - (IBAction)buttin:(id)sender {
     self.imgMain.alpha-=0.2f;
 
+}
+
+- (IBAction)buttonContinuePressed:(id)sender
+{
+    NSLog(@"Button Continue Pressed");
+}
+- (void) dummyFunction
+{
+    
 }
 @end
