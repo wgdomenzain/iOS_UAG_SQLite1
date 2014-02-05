@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 SmartPlace. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "View_Main.h"
 
-@interface ViewController ()
+@interface View_Main ()
 
 @end
 
-@implementation ViewController
+@implementation View_Main
 
 - (void)viewDidLoad
 {
