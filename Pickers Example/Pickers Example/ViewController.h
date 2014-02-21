@@ -10,5 +10,11 @@
 
 @interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (strong, nonatomic) IBOutlet UIDatePicker *pickerDate;
+@property (strong, nonatomic) IBOutlet UILabel *labelResultDate;
+
+
+
+- (IBAction)buttonSelectDatePressed:(id)sender;
 
 @end

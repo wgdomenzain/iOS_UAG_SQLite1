@@ -28,6 +28,22 @@ NSString *str_arrayTitles[8] = {@"Culiacán", @"Zapopan", @"Guadalajara", @"Vera
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonSelectDatePressed:(id)sender
+{
+
+    NSLocale *usLocale = [[NSLocale alloc]
+                          initWithLocaleIdentifier:@"en_US"];
+    
+    NSDate *pickerDate = [self.pickerDate date];
+    
+    NSString *selectionString = [[NSString alloc]
+                                 initWithFormat:@"%@",
+                                 [pickerDate descriptionWithLocale:usLocale]];
+    self.labelResultDate.text = selectionString;
+    self.labelResultDate.adjustsFontSizeToFitWidth = YES;
+
+}
+
 #pragma mark -
 #pragma mark PickerView DataSource
 
@@ -77,6 +93,7 @@ numberOfRowsInComponent:(NSInteger)component
             break;
     }
 }
+
 
 
 
