@@ -34,25 +34,34 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
     CLLocationCoordinate2D location1;
+    location1.latitude = latitude1;
+    location1.longitude = longitude1;
+    
+    MKPointAnnotation *point1 =[[MKPointAnnotation alloc] init];
+    point1.coordinate = location1;
+    point1.title = @"Minerva";
+    [self.mapView addAnnotation:point1];
+    
+    /*
+    self.mapView.delegate = self;
+    
+
     CLLocationCoordinate2D location2;
     CLLocationCoordinate2D location3;
     
+    CLLocationCoordinate2D Coord1 = {latitude1, longitude1};
+    CLLocationCoordinate2D Coord2 = {latitude2, longitude2};
+    CLLocationCoordinate2D Coord3 = {latitude3, longitude3};
+    
+    
     location1.latitude = latitude1;
     location1.longitude = longitude1;
-    MyAnnotation *annotation1 = [[MyAnnotation alloc] initWithTitle:@"Minerva" subtitle:@"Guadalajara"andCoordinate:location1];
+    MyAnnotation *annotation1 = [[MyAnnotation alloc] initWithCoordinate:location1 title:@"Minerva"];
     [self.mapView addAnnotation:annotation1];
+    */
     
-    location2.latitude = latitude2;
-    location2.longitude = longitude2;
-    MyAnnotation *annotation2 = [[MyAnnotation alloc] initWithTitle:@"Vecina Guapa" subtitle:@"24 años"andCoordinate:location2];
-    [self.mapView addAnnotation:annotation2];
     
-    location3.latitude = latitude1;
-    location3.longitude = longitude1;
-    MyAnnotation *annotation3 = [[MyAnnotation alloc] initWithTitle:@"Casa Juan" subtitle:@"Fiesta Yolo"andCoordinate:location3];
-    [self.mapView addAnnotation:annotation3];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -75,10 +84,47 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)cfgMaps
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+
 {
+    if ([annotation isKindOfClass:[MKUserLocation class]])
+    {
+        return nil;
+    }
     
+    static  NSString *identifier = @"MyAnnotation";
+    
+    MKPinAnnotationView * annotationView = (MKPinAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+    if (!annotationView)
+    {
+        annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        annotationView.pinColor = MKPinAnnotationColorPurple;
+        annotationView.animatesDrop = YES;
+        annotationView.canShowCallout = YES;
+    }
+    else
+    {
+        annotationView.annotation = annotation;
+    }
+    
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    
+    return annotationView;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

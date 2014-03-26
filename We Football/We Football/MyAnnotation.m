@@ -11,13 +11,20 @@
 @implementation MyAnnotation
 //@synthesize title, subtitle, coordinate;
 
-- (id)initWithTitle:(NSString *)Title subtitle:(NSString*)Subtitle andCoordinate:(CLLocationCoordinate2D)Coord
+-(id) initWithCoordinate:(CLLocationCoordinate2D)coordinate title:(NSString *)title;
 {
-	self = [super init];
+	if ((self = [super init])) {
+        self.coordinate = coordinate;
+        self.title = title;
+    }
+    return self;
+    /*
+    self = [super init];
 	self.title = Title;
     self.subtitle = Subtitle;
 	self.coordinate = Coord;
 	return self;
+     */
 }
 
 @end
